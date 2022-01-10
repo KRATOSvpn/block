@@ -7,8 +7,7 @@ echo -e "\033[1;31m≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤�
 	echo ""
 	echo "Este é um script experimental. Use por sua conta e risco!"
 	echo "Este script irá bloquear alguns sites de Torrent."
-	echo "A lista será atualizada conforme o tempo 
-ou surgimento de novos sites"
+	echo "A lista será atualizada quando novos sites TORRENT for achados"
 	echo ""
 	read -p "Continuar com a instalação? [s/n]: " -e -i n resposta
 	if [[ "$resposta" = 's' ]]; then
