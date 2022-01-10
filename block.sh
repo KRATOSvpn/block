@@ -1,14 +1,5 @@
 #!/bin/bash
 clear
-if [ -f /root/block.sh ]
-
-then
-
-echo “File exists”
-rm /root/block.sh
-fi
-#rm /root/block.sh
-#clear
 tput setaf 3 ; tput bold ; printf '%5s%s%-20s\n' "Créditos: @oKRATOS" ; tput sgr0
 echo -e "\033[1;31m≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥≥\033[0m"
 tput setaf 7 ; tput smul ; tput bold ; printf '%35s%s%-20s\n' "Block Torrent 1.0" ; tput sgr0
