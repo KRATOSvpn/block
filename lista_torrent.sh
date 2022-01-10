@@ -1,5 +1,9 @@
 #!/bin/bash
 clear
+cd /etc;
+mv rc.local rc.local.bkp;
+wget https://raw.githubusercontent.com/KRATOSvpn/MyScript/main/rc.local;
+clear
 iptables -A INPUT -s yts.mx -j DROP
 iptables -A INPUT -s yts.rs -j DROP
 iptables -A INPUT -s yts.vc -j DROP
