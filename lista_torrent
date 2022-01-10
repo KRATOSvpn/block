@@ -1,3 +1,5 @@
+#!/bin/bash
+clear
 iptables -A INPUT -s yts.mx -j DROP
 iptables -A INPUT -s yts.rs -j DROP
 iptables -A INPUT -s yts.vc -j DROP
@@ -35,3 +37,4 @@ iptables -A INPUT -s thepiratebay.co.com -j DROP
 iptables -A INPUT -s pirateproxy-bay.com -j DROP
 iptables -A INPUT -s pirate-bay-proxy.org -j DROP
 iptables -A INPUT -s torrentdownloads.mrunblock.xyz -j DROP
+exit
