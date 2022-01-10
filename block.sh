@@ -2,7 +2,7 @@
 clear
 tput setaf 1 ; tput bold ; printf '%5s%s%-20s\n' "Créditos: @oKRATOS" ; tput sgr0
 echo -e "\033[1;31m═══════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%33s%s%-33s\n' "Block Torrent 1.0" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%33s%s%-23s\n' "Block Torrent 1.0" ; tput sgr0
 echo -e "\033[1;31m═══════════════════════════════════════════════════════\033[0m"
 	echo ""
 	echo "Este é um script experimental. Use por sua conta e risco!"
@@ -58,7 +58,7 @@ read -p "Deseja ver os sites que foram bloqueados? [s/n]: " -e -i n resposta
 echo ""
 	echo "Sites que foram bloqueados:"
 	echo " "
-echo " yts.mx
+tput setaf 1 ; tput bold ; printf '%5s%s%-20s\n' " yts.mx
  yts.rs
  yts.vc
  yts.pm
@@ -94,7 +94,7 @@ echo " yts.mx
  thepiratebay.co.com
  pirateproxy-bay.com
  pirate-bay-proxy.org
- torrentdownloads.mrunblock.xyz"
+ torrentdownloads.mrunblock.xyz" ; tput sgr0
 echo ""
 else
 clear
