@@ -1,14 +1,18 @@
 #!/bin/bash
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "Block Torrent 1.0" ; tput sgr0
+clear
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%33s%s%-20s\n' "Block Torrent 1.0" ; tput sgr0
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 	echo ""
 	echo "Este é um script experimental. Use por sua conta e risco!"
 	echo "Este script irá bloquear alguns sites de Torrent."
-	echo "a lista será atualizada conforme o tempo ou surgimento de novos sites"
+	echo "A lista será atualizada conforme o tempo 
+ou surgimento de novos sites"
 	echo ""
 	read -p "Continuar com a instalação? [s/n]: " -e -i n resposta
 	if [[ "$resposta" = 's' ]]; then
- echo "" 
- echo "Iniciando bloqueio" 
+clear
+ echo "Iniciando Bloqueio" 
  echo "" 
 	echo "" >> iptables -A INPUT -s yts.mx -j DROP
 iptables -A INPUT -s yts.rs -j DROP
@@ -47,12 +51,12 @@ iptables -A INPUT -s thepiratebay.co.com -j DROP
 iptables -A INPUT -s pirateproxy-bay.com -j DROP
 iptables -A INPUT -s pirate-bay-proxy.org -j DROP
 iptables -A INPUT -s torrentdownloads.mrunblock.xyz -j DROP
- echo "" 
- echo "PRONTO!" 
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "BLOQUEIO FEITO!" ; tput sgr0
+read -p "Deseja ver os sites que foram bloqueados? [s/n]: " -e -i n resposta
+	if [[ "$resposta" = 's' ]]; then
 	echo "Sites que foram bloqueados:"
 	echo " "
-echo "
-        yts.mx
+echo "        yts.mx
         yts.rs
         yts.vc
         yts.pm
@@ -78,7 +82,6 @@ echo "
         limetorrents.pro
         thepiratebay.org
         yts.unblockit.win
-        yts.unblockit.win
         yts.nocensor.club
         yifytorrenthd.net
         tpbproxypirate.com
@@ -91,6 +94,9 @@ echo "
         pirate-bay-proxy.org
         torrentdownloads.mrunblock.xyz"
 echo ""
+else
+clear
+	fi
 	else
 		echo ""
 		echo "A instalação foi cancelada pelo usuário!"
