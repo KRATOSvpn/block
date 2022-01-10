@@ -1,4 +1,11 @@
 #!/bin/bash
+if [ -f /root/block.sh ]
+
+then
+
+echo “File exists”
+
+fi
 rm /root/block.sh
 clear
 tput setaf 3 ; tput bold ; printf '%5s%s%-20s\n' "Créditos: @oKRATOS" ; tput sgr0
