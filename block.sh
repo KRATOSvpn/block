@@ -1,5 +1,5 @@
 #!/bin/bash
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "TCP Tweaker 1.0" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "Block Torrent 1.0" ; tput sgr0
 	echo ""
 	echo "Este é um script experimental. Use por sua conta e risco!"
 	echo "Este script irá bloquear alguns sites de Torrent."
@@ -96,5 +96,4 @@ echo ""
 		echo "A instalação foi cancelada pelo usuário!"
 		echo ""
 	fi
-fi
 exit
