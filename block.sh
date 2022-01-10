@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-tput setaf 1 ; tput bold ; printf '%5s%s%-20s\n' "Créditos: @oKRATOS" ; tput sgr0
+tput setaf 3 ; tput bold ; printf '%5s%s%-20s\n' "Créditos: @oKRATOS" ; tput sgr0
 echo -e "\033[1;31m═══════════════════════════════════════════════════════\033[0m"
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%12s%s%-12s\n' "Block Torrent 1.0" ; tput sgr0
 echo -e "\033[1;31m═══════════════════════════════════════════════════════\033[0m"
