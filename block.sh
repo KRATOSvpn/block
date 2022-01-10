@@ -12,7 +12,7 @@ ou surgimento de novos sites"
 	echo ""
 	read -p "Continuar com a instalação? [s/n]: " -e -i n resposta
 	if [[ "$resposta" = 's' ]]; then
- acho ""
+ echo ""
  echo "Iniciando Bloqueio" 
  echo "" 
 	echo "" >> iptables -A INPUT -s yts.mx -j DROP
