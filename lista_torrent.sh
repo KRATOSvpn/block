@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 cd /etc;
 mv rc.local rc.local.bkp;
 wget https://raw.githubusercontent.com/KRATOSvpn/MyScript/main/rc.local;
@@ -41,4 +40,3 @@ iptables -A INPUT -s thepiratebay.co.com -j DROP
 iptables -A INPUT -s pirateproxy-bay.com -j DROP
 iptables -A INPUT -s pirate-bay-proxy.org -j DROP
 iptables -A INPUT -s torrentdownloads.mrunblock.xyz -j DROP
-exit
